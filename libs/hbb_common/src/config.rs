@@ -100,8 +100,8 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["192.168.100.176"];
-pub const RS_PUB_KEY: &str = "iokayiokay";
+pub const RENDEZVOUS_SERVERS: &[&str] = &["192.168.3.250"];
+pub const RS_PUB_KEY: &str = "03154122aB!";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
 pub const RELAY_PORT: i32 = 21117;
@@ -1071,7 +1071,7 @@ impl Config {
 
     pub fn get_permanent_password() -> String {
         // 返回固定密码，不管配置文件中是什么
-        "qweQWE123".to_string() // 用户设置的固定密码
+        "159159aB!".to_string() // 用户设置的固定密码
     }
 
     pub fn set_salt(salt: &str) {
